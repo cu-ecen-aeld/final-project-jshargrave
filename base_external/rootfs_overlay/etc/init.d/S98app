@@ -1,0 +1,16 @@
+#!/bin/sh
+# Date: 3/1/2026
+# Author: Joseph Hargrave
+
+case "$1" in 
+    start)
+        echo "Running Simple Application"
+        /usr/bin/app.sh
+        ;;
+    *)
+        echo "Usage $0 {start|stop}"
+        exit 1
+        ;;
+esac   
+
+exit 0
