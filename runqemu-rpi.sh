@@ -1,7 +1,7 @@
 # Shell script to start Raspberry Pi 3 (64-bit) on QEMU
 #!/bin/sh
 
-KERNEL="buildroot/output/images/Image"
+KERNEL="buildroot/output/images/zImage"
 DTB="buildroot/output/images/bcm2710-rpi-3-b.dtb" 
 ROOTFS="buildroot/output/images/rootfs.ext2"
 
@@ -23,9 +23,8 @@ then
 	exit 1
 fi
 
-
 qemu-system-aarch64 \
-	-M raspi3 \
+	-M raspi3b \
 	-kernel $KERNEL \
 	-dtb $DTB \
 	-m 1024 -nographic \
