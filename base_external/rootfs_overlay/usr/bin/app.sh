@@ -1,1 +1,0 @@
-echo "Hello World from Simple Application" > app.txt

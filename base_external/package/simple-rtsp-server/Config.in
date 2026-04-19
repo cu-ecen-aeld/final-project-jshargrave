@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_SIMPLE_RTSP_SERVER
+	bool "simple-rtsp-server"
+	help
+	  Includes a simple rtsp server using gstreamer.

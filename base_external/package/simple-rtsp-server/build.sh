@@ -1,0 +1,1 @@
+gcc simple-rtsp-server.c -o simple-rtsp-server $(pkg-config --cflags --libs gstreamer-1.0 gstreamer-rtsp-server-1.0)
